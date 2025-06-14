@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✨ My Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 My Task Manager</h1>
+      <p>Stay organized, stay powerful.</p>
+    </header>
+
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="💡 Add a new task..." />
+      <button type="submit">➕ Add Task</button>
+      <small id="error-message"></small>
+    </form>
+
+    <div class="filters">
+      <button data-filter="all" class="active">🌐 All</button>
+      <button data-filter="completed">✅ Completed</button>
+      <button data-filter="pending">🕒 Pending</button>
+    </div>
+
+    <section id="task-list"></section>
+
+    <footer>
+      <p>🌈 Designed with ❤️ by Amal</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
